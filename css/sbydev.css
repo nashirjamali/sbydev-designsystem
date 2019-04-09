@@ -253,7 +253,33 @@ p {
           box-shadow: -1.3px 1.5px 6px 0 rgba(229, 238, 245, 0.4);
 }
 
-.alert-danger {
-  background-color: #ffcdb8;
+.form-control {
+  font-family: "Roboto-Regular";
+  color: #4A4A4A !important;
+  padding: 10px 12px !important;
+  height: 100% !important;
+}
+
+.form-control:focus {
+  border-color: rgba(50, 151, 211, 0.25) !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  color: #4A4A4A !important;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: rgba(74, 74, 74, 0.5) !important;
+}
+
+.form-control:-ms-input-placeholder {
+  color: rgba(74, 74, 74, 0.5) !important;
+}
+
+.form-control::-ms-input-placeholder {
+  color: rgba(74, 74, 74, 0.5) !important;
+}
+
+.form-control::placeholder {
+  color: rgba(74, 74, 74, 0.5) !important;
 }
 /*# sourceMappingURL=sbydev.css.map */

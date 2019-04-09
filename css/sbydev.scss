@@ -311,8 +311,35 @@ $button: (
     }
 }
 
-// Alert
-.alert-danger{
-    background-color: lighten(mainColors(red), 40%);
+
+// Form Input
+.form-control{
+    font-family: fontFamily(roboto-regular);
+    color: textColors(grey) !important;
+    padding: 10px 12px !important;
+    height: 100% !important;
+    &:focus{
+        border-color: rgba(50,151,211,.25) !important;
+        box-shadow: none !important;
+        color: textColors(grey) !important;
+    }&::placeholder{
+        color: rgba(textColors(grey), .5) !important;
+    } 
 }
+
+
+
+
+// .form-group{
+//     .form-control{
+//         font-size: 16px;
+//         color: textColors(grey);
+//         border: 1px solid #cad1d7;
+//         padding: .625rem .75rem;
+//         border-radius: .25rem;
+//         &:focus{
+//             border-color: rgba(50,151,211,.25);
+//         }
+//     }
+// }
 
