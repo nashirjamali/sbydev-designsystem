@@ -282,4 +282,33 @@ p {
 .form-control::placeholder {
   color: rgba(74, 74, 74, 0.5) !important;
 }
+
+.form-control-alternative {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(50, 50, 50, 0.16);
+          box-shadow: 0 1px 3px 0 rgba(50, 50, 50, 0.16);
+  border: 0 !important;
+}
+
+.form-control-alternative:focus {
+  border-color: rgba(50, 151, 211, 0.25) !important;
+  color: #4A4A4A !important;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(50, 50, 50, 0.16) !important;
+          box-shadow: 0 1px 3px 0 rgba(50, 50, 50, 0.16) !important;
+}
+
+.form-control-alternative::-webkit-input-placeholder {
+  color: rgba(74, 74, 74, 0.5) !important;
+}
+
+.form-control-alternative:-ms-input-placeholder {
+  color: rgba(74, 74, 74, 0.5) !important;
+}
+
+.form-control-alternative::-ms-input-placeholder {
+  color: rgba(74, 74, 74, 0.5) !important;
+}
+
+.form-control-alternative::placeholder {
+  color: rgba(74, 74, 74, 0.5) !important;
+}
 /*# sourceMappingURL=sbydev.css.map */

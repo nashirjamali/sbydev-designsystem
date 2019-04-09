@@ -313,6 +313,7 @@ $button: (
 
 
 // Form Input
+// Form Basic
 .form-control{
     font-family: fontFamily(roboto-regular);
     color: textColors(grey) !important;
@@ -327,7 +328,18 @@ $button: (
     } 
 }
 
-
+// Form Alternative
+.form-control-alternative{
+    box-shadow: 0 1px 3px 0 rgba(50, 50, 50, 0.16);
+    border: 0 !important;
+    &:focus{
+        border-color: rgba(50,151,211,.25) !important;
+        color: textColors(grey) !important;
+        box-shadow: 0 1px 3px 0 rgba(50, 50, 50, 0.16) !important;
+    }&::placeholder{
+        color: rgba(textColors(grey), .5) !important;
+    }
+}
 
 
 // .form-group{
