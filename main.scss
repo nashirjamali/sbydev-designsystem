@@ -64,5 +64,22 @@ $theme-colors: map-merge(
 }
 
 
+// Cards
+
+$card-border-width:     0px !default;
+$card-shadow-distant:   0 16px 24px 0 rgba(50, 50, 50, 0.06);
+$card-shadow-close:     0 2px 8px 0 rgba(50, 50, 50, 0.16);
+$card-shadow-subtle:    0 0 1px 0 rgba(50, 50, 50, 0.6);
+
+.card-distant{
+    box-shadow: $card-shadow-distant;
+}
+.card-close{
+    box-shadow: $card-shadow-close;
+}
+.card-subtle{
+    box-shadow: $card-shadow-subtle;
+}
+
 
 @import "./node_modules/bootstrap/scss/bootstrap";
