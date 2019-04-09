@@ -65,12 +65,14 @@ $theme-colors: map-merge(
 
 
 // Cards
-
 $card-border-width:     0px !default;
 $card-shadow-distant:   0 16px 24px 0 rgba(50, 50, 50, 0.06);
 $card-shadow-close:     0 2px 8px 0 rgba(50, 50, 50, 0.16);
 $card-shadow-subtle:    0 0 1px 0 rgba(50, 50, 50, 0.6);
 
+.card{
+    margin-bottom: 2em;
+}
 .card-distant{
     box-shadow: $card-shadow-distant;
 }
@@ -81,5 +83,42 @@ $card-shadow-subtle:    0 0 1px 0 rgba(50, 50, 50, 0.6);
     box-shadow: $card-shadow-subtle;
 }
 
+// Buttons
 
+$input-btn-padding-y:   0.8125rem !default;
+$input-btn-padding-x:   2.125rem !default;
+$btn-font-family:       'Roboto';
+$btn-font-weight:       600;
+
+.btn{ 
+    text-transform: uppercase;
+}
+
+@each $color, $value in $theme-colors {
+    .btn-#{$color} {
+        @if $color == primary{
+            color: white !important;
+        }
+        @if $color == secondary{
+            color: white !important;
+        }
+        box-shadow: -1.3px 1.5px 6px 0 rgba($value, 0.4);
+    }
+}
+
+
+@each $color, $value in $theme-colors {
+    .btn-outline-#{$color} {
+        color: $value;
+        &:hover{
+            @if $color == primary{
+                color: white !important;
+            }
+            @if $color == secondary{
+                color: white !important;
+            }
+            box-shadow: -1.3px 1.5px 6px 0 rgba($value, 0.4); 
+        }
+    }
+}
 @import "./node_modules/bootstrap/scss/bootstrap";

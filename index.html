@@ -13,20 +13,14 @@
         @import "./fonts/poppins/css/poppins.css";
         @import "./fonts/roboto/css/roboto.css";
         @import "./fonts/font-awesome/css/font-awesome.min.css";
-
-
-        #typography.row.col-md {
-            float: none;
-            display: table-cell;
-            height: auto;
-            vertical-align: text-bottom;
-        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <h2 class="mt-5 mb-5">SurabayaDev Design System Documentation</h2>
+
+        <!-- Typography Begin -->
         <div class="mt-5" id="typography">
             <hr>
             <h3 class="mb-4">Typography</h3>
@@ -56,7 +50,9 @@
                 excepturi ipsam alias officia illum maxime.</p>
             <samp>paragraph</samp>
         </div>
+        <!-- Typography End -->
 
+        <!-- Colors Begin -->
         <div class="mt-5" id="colors">
             <hr>
             <h3 class="mb-4">Colors</h3>
@@ -150,7 +146,155 @@
                 </div>
             </div>
             <!-- Gradient Colors End -->
+        </div>
+        <!-- Colors End -->
 
+        <!-- Cards Begin -->
+        <div class="mt-5" id="cards">
+            <hr>
+            <h3 class="mb-4">Cards</h3>
+            <div class="row">
+                <div class="col-md">
+                    <div class="card card-distant" style="width: 18rem;">
+                        <svg class="bd-placeholder-img card-img-bottom" width="100%" height="180"
+                            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                            role="img" aria-label="Placeholder: Image cap">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6"
+                                dy=".3em">Image</text>
+                        </svg>
+                        <div class="card-body">
+                            <h5 class="card-title">Card Distant</h5>
+                            <p class="card-text">.card-distant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card card-close" style="width: 18rem;">
+                        <svg class="bd-placeholder-img card-img-bottom" width="100%" height="180"
+                            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                            role="img" aria-label="Placeholder: Image cap">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6"
+                                dy=".3em">Image</text>
+                        </svg>
+                        <div class="card-body">
+                            <h5 class="card-title">Card Close</h5>
+                            <p class="card-text">.card-close</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card card-subtle" style="width: 18rem;">
+                        <svg class="bd-placeholder-img card-img-bottom" width="100%" height="180"
+                            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                            role="img" aria-label="Placeholder: Image cap">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6"
+                                dy=".3em">Image</text>
+                        </svg>
+                        <div class="card-body">
+                            <h5 class="card-title">Card Subtle</h5>
+                            <p class="card-text">.card-subtle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cards End -->
+
+        <!-- Buttons Start -->
+        <div class="mt-5" id="buttons">
+            <hr>
+            <h3 class="mb-4">Buttons</h3>
+
+            <!-- Button Filled Begin -->
+            <h4 class="mb-2">Button Filled</h4>
+            <div class="row">
+                <div class="col-md mb-3">
+                    <button class="btn btn-primary">
+                        Primary
+                    </button><br><br>   
+                    <samp>.btn .btn-primary</samp>
+                </div>
+                <div class="col-md mb-3">
+                    <button class="btn btn-secondary">
+                        Secondary
+                    </button><br><br>   
+                    <samp>.btn .btn-secondary</samp>
+                </div>
+                <br><br> 
+                <div class="col-md mb-3">
+                    <button class="btn btn-danger">
+                        Danger
+                    </button><br><br>   
+                    <samp>.btn .btn-danger</samp>
+                </div>
+                <div class="col-md mb-3">
+                    <button class="btn btn-info">
+                        Info
+                    </button><br><br>   
+                    <samp>.btn .btn-info</samp>
+                </div>
+                <div class="col-md mb-3">
+                    <button class="btn btn-dark">
+                        Dark
+                    </button><br><br>   
+                    <samp>.btn .btn-dark</samp>
+                </div>
+                <div class="col-md mb-3">
+                    <button class="btn btn-light">
+                        Light
+                    </button><br><br>   
+                    <samp>.btn .btn-light</samp>
+                </div>
+            </div>
+            <!-- Button Filled End -->
+            <br><br>
+            <!-- Button Outline Start -->
+            <h4 class="mb-2">Button Outline</h4>
+            <div class="row">
+                <div class="col-md mb-3">
+                    <button class="btn btn-outline-primary">
+                        Primary
+                    </button><br><br>   
+                    <samp>.btn .btn-outline-primary</samp>
+                </div>
+                <div class="col-md mb-3">
+                    <button class="btn btn-outline-secondary">
+                        Secondary
+                    </button><br><br>   
+                    <samp>.btn .btn-secondary</samp>
+                </div>
+                <br><br> 
+                <div class="col-md mb-3">
+                    <button class="btn btn-outline-danger">
+                        Danger
+                    </button><br><br>   
+                    <samp>.btn .btn-outline-danger</samp>
+                </div>
+                <div class="col-md mb-3">
+                    <button class="btn btn-outline-info">
+                        Info
+                    </button><br><br>   
+                    <samp>.btn .btn-outline-info</samp>
+                </div>
+                <div class="col-md mb-3">
+                    <button class="btn btn-outline-dark">
+                        Dark
+                    </button><br><br>   
+                    <samp>.btn .btn-outline-dark</samp>
+                </div>
+                <div class="col-md mb-3">
+                    <button class="btn btn-outline-light">
+                        Light
+                    </button><br><br>   
+                    <samp>.btn .btn-outline-light</samp>
+                </div>
+            </div>
+            <!-- Button Outline End -->
 
         </div>
     </div>
