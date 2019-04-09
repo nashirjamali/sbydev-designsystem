@@ -21,4 +21,48 @@ h4{
 }
 
 
+// Colors
+// Main Colors
+$light-green:   #53c940;
+$green:         #009700;
+$dark-green:    #006700;
+$light-blue:    #69b9ff;
+$blue:          #008aff;
+$dark-blue:     #005ecb;
+$orange:        #ff7a39;
+$red:           #e7494c;
+$dark-red:      #b00000;
+$dark:          #062331;
+$light:         #e5eef5;
+$secondary:     #99b3c6;
+
+$primary:       $light-green !default;
+$secondary:     $secondary !default;
+$danger:        $red !default;
+$info:          $blue !default;
+$dark:          $dark !default;
+$light:         $light !default;;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "info":       $info,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+.bg-gradient-1{
+    background-image: linear-gradient(80deg, #00ac95, #53c940);
+}
+.bg-gradient-2{
+    background-image: linear-gradient(260deg, #00cfee, #008aff);
+}
+
+
+
 @import "./node_modules/bootstrap/scss/bootstrap";
