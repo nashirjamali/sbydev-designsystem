@@ -148,4 +148,10 @@ $btn-font-weight:       600;
 $nav-tabs-link-active-color: $green !default;
 
 
+// Section
+section{
+    padding-top: 9%;
+    padding-bottom: 9%;
+}
+
 @import "./node_modules/bootstrap/scss/bootstrap";
