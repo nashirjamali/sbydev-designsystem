@@ -121,4 +121,31 @@ $btn-font-weight:       600;
         }
     }
 }
+
+
+// Navbar
+.navbar{
+    box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.16);
+}
+
+.navbar-nav{
+    margin-left: 7.5rem;
+}
+.nav-link{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1rem;
+    padding-right: 2.5rem !important; 
+}
+.nav-link.active,
+.nav-item.show .nav-link{
+    color: $green !important;
+}
+.nav-link:hover{
+    color: $green !important;
+}
+
+$nav-tabs-link-active-color: $green !default;
+
+
 @import "./node_modules/bootstrap/scss/bootstrap";

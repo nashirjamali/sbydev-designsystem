@@ -121,6 +121,31 @@ h4 {
           box-shadow: -1.3px 1.5px 6px 0 rgba(6, 35, 49, 0.4);
 }
 
+.navbar {
+  -webkit-box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.16);
+          box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.16);
+}
+
+.navbar-nav {
+  margin-left: 7.5rem;
+}
+
+.nav-link {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 1rem;
+  padding-right: 2.5rem !important;
+}
+
+.nav-link.active,
+.nav-item.show .nav-link {
+  color: #009700 !important;
+}
+
+.nav-link:hover {
+  color: #009700 !important;
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -4484,7 +4509,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #009700;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
